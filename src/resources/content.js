@@ -41,17 +41,18 @@ const home = {
   label: "Home",
   title: `${person.firstName}'s Sandbox`,
   description: `Portfolio website showcasing my work`,
-  headline: <>Welcome to my Sandbox</>, // Change to your own headline
+  headline: <span style={{ fontSize: "0.85em" }}>Building for Impact</span>, // Change to your own headline
   featured: {
     display: true, // Set to false if you don't want a featured project
-    title: <>Recent project: <strong className="ml-4">PMF for Your Music Lab</strong></>,
-    href: "/work/your-project-slug", // Update with your actual project slug
+    title: <>Recent project: <strong className="ml-4">Foundation Sprint</strong></>,
+    href: "/work/projects/lead-generation.mdx", // Update with your actual project slug
   },
   subline: (
-    <>
-    Hi, I am {person.firstName}. I've build this space to share my learnings and experiments.
+    <span style={{ fontSize: "0.8em" }}>
+      Hi, I am {person.firstName} and I'm a senior product manager at Sephora. I'm interested in user behaviour, tech in public policy, data science and frisbee.
+  
       {/* Customize this description to match your background and interests */}
-    </>
+    </span>
   ),
 };
 
