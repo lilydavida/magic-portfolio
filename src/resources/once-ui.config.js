@@ -1,14 +1,14 @@
 import { home } from "./content";
 
 // IMPORTANT: Replace with your own domain address - it's used for SEO in meta tags and schema
-const baseURL = "https://demo.magic-portfolio.com";
+const baseURL = "https://your-domain.com"; // Change to your actual domain
 
 const routes = {
   "/": true,
   "/about": true,
   "/work": true,
-  "/blog": true,
-  "/gallery": true,
+  "/blog": false,
+  "/gallery": false,
 };
 
 const display = {
@@ -173,18 +173,20 @@ const mailchimp = {
 
 // default schema data
 const schema = {
-  logo: "",
-  type: "Organization",
-  name: "Once UI",
+  logo: "", // Add your logo URL here
+  type: "Person", // Change to "Person" for personal portfolio
+  name: "Your Name", // Change to your name
   description: home.description,
-  email: "lorant@once-ui.com",
+  email: "your.email@example.com", // Change to your email
 };
 
-// social links
+// social links - update with your actual social media URLs
 const sameAs = {
-  threads: "https://www.threads.com/@once_ui",
-  linkedin: "https://www.linkedin.com/company/once-ui/",
-  discord: "https://discord.com/invite/5EyAQ4eNdS",
+  // Update these with your actual social media links
+  // threads: "https://www.threads.com/@yourusername",
+  // linkedin: "https://www.linkedin.com/in/yourusername/",
+  // twitter: "https://twitter.com/yourusername",
+  // github: "https://github.com/yourusername",
 };
 
 export { display, mailchimp, routes, protectedRoutes, baseURL, fonts, style, schema, sameAs, effects, dataStyle };
